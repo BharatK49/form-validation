@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Event Signup</title>
+  <!-- Linking external CSS file for styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Main heading for the signup form -->
+    <h1>Community Event Signup</h1>
+
+    <!-- Registration form with input validation handled in JavaScript -->
+    <form id="registrationForm">
+      
+      <!-- Full Name field -->
+      <label>Full Name*  
+        <input type="text" id="name" required>
+        <span class="error" id="nameError"></span>
+      </label>
+
+      <!-- Email field -->
+      <label>Email*  
+        <input type="email" id="email" required>
+        <span class="error" id="emailError"></span>
+      </label>
+
+      <!-- Phone Number field -->
+      <label>Phone Number*  
+        <input type="text" id="phone" required>
+        <span class="error" id="phoneError"></span>
+      </label>
+
+      <!-- Age field -->
+      <label>Age*  
+        <input type="number" id="age" required>
+        <span class="error" id="ageError"></span>
+      </label>
+
+      <!-- Submit button -->
+      <button type="submit">Register</button>
+
+      <!-- Success message area -->
+      <p class="success" id="successMsg"></p>
+    </form>
+  </div>
+
+  <!-- Linking JavaScript file for form validation -->
+  <script src="script.js"></script>
+</body>
+</html>
